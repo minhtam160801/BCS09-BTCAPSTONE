@@ -99,7 +99,8 @@ header.nav-fixed {
 }
 .navbar-nav .nav-item .nav-link{
     /* font-family: 'Jost', sans-serif; */
-    color: gray;
+    color: white;
+    opacity: 0.7;
     font-weight: 500;
     font-size: 15px;
 }
@@ -115,6 +116,10 @@ header.nav-fixed {
 }
 .navbar-nav .nav-item:hover .nav-link {
     color: white;
+}
+.nav-fixed .navbar-nav .nav-item .nav-link {
+    color: gray;
+    opacity: 1;
 }
 .nav-fixed .navbar-nav .nav-item:hover .nav-link {
     color: gray;
@@ -1578,4 +1583,99 @@ div#small-dialog iframe {
 }
 .about4 .play-view {
     display: inline-block;
+}
+/* about5 */
+.about5 h5 {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    display: block;
+}
+.about5 h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.about5 .item-img {
+    position: relative;
+    overflow: hidden;
+}
+.about5 .item-img img {
+    border-radius: 8px;
+}
+.about5 .item-img .overlay-about5 {
+    /* content: ""; */
+    background-color: rgb(20 20 20 / 70%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.about5 .item-img:hover .overlay-about5 {
+    opacity: 1;
+    /* top: -50px; */
+}
+.about5 .item-img:hover .overlay-about5 .overlay-content {
+    top: 100px;
+}
+.overlay-about5 .overlay-content {
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    top: 55%;
+    left: 0;
+    padding: 10%;
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.3s;
+}
+.overlay-about5 .overlay-content p {
+    color: white;
+    font-size: 20px;
+    opacity: 0.8;
+    margin: 0;
+    padding: 0;
+}
+.overlay-about5 .overlay-content .socials a {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background-color: transparent;
+}
+.overlay-about5 .overlay-content .socials a span {
+    width: 37px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 37px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s;
+    color: #fff;
+}
+.item-content a {
+    text-decoration: none;
+}
+.item-content a h6 {
+    color: #3f3a64;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 0 5px;
+    transition: all 0.2s;
+}
+.item-content a h6:hover {
+    color: #009f4d;
+}
+.item-content p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;
+    opacity: 0.8;
+    text-align: center;
 }
