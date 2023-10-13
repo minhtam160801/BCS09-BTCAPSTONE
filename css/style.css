@@ -22,6 +22,17 @@ body {
     .mr-md-4, .mx-md-4 {
         margin-right: 1.5rem !important;
     }
+    .pl-md-5, .px-md-5 {
+        padding-left: 3rem !important;
+    }
+}
+@media screen and (min-width: 992px) {
+    .pl-lg-4 {
+        padding-left: 1.5rem !important;
+    }
+    .text-lg-right {
+        text-align: right !important;
+    }
 }
 h1 {
     clear: both;
@@ -1373,7 +1384,7 @@ button.mfp-close {
     border: 0;
     display: block;
     outline: none;
-    -webkit-appearance:none;
+    --webkit-appearance:none;
     padding: 0;
     z-index: 1046;
     box-shadow: none;
@@ -1678,4 +1689,117 @@ div#small-dialog iframe {
     color: #666;
     opacity: 0.8;
     text-align: center;
+}
+
+/* about6 */
+.about6 {
+    background-color: #F7F7F7;
+}
+.about6 h5 {
+    color: #7e7d7d;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+}
+.about6 h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.about6-title {
+    max-width: 800px;
+    margin: auto;
+}
+.about6 .icon-info {
+    font-size: 30px;
+    text-align: center;
+}
+.about6 .icon-info span.fa-briefcase {
+    color: #009f4d;
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 8px;
+}
+.about6 .icon-info span.fa-magnifying-glass-plus {
+    color: #ff4c4c;
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 8px;
+}
+.about6 .icon-info span.fa-gears {
+    color: #213364;
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 8px;
+}
+.about6 .icon-info span.fa-chart-area {
+    color: #f48924;
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 8px;
+}
+.about6-text h5 {
+    margin-bottom: 12px;
+}
+.about6-text h5 a {
+    text-decoration: none;
+    text-align: left;
+    color: #3f3a64;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.about6-text h5 a:hover {
+    color: #009f4d;
+}
+.about6-text p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;
+    opacity: 0.8;
+    margin: 0;
+}
+/* about7 */
+.about7-title h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+}
+.about7-title p {
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 27px;
+    color: #666;
+    opacity: 0.8;
+}
+.about7-info {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.about7 .btn {
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.about7 .btn:hover {
+    background-color: #008030;
+    border-color: #00732c;
+}
+.about7 .btn i {
+    margin-left: 8px;
 }
