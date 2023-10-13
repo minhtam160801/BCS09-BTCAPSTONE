@@ -139,7 +139,7 @@
           </div>
           <div class="overlay"></div>
         </div>
-        <div class="slide2 slide">
+        <div class="slide2 slide" >
           <div class="container">
             <div class="banner-content">
               <h1 data-animation="fadeInUp" class="animate__animated animate__fadeInDown wow animate__delay-5s">Embracing success do our best, need best advice</h1>
@@ -159,7 +159,7 @@
           </div>
           <div class="overlay"></div>
         </div>
-        <div class="slide3 slide">
+        <div class="slide3 slide" >
           <div class="container">
             <div class="banner-content">
               <h1 data-animation="fadeInUp">Digital transformation driven by technology</h1>
@@ -179,7 +179,7 @@
           </div>
           <div class="overlay"></div>
         </div>
-        <div class="slide4 slide">
+        <div class="slide4 slide" >
           <div class="container">
             <div class="banner-content">
               <h1 data-animation="fadeInUp" class="animate__animated animate__flipInX wow animate__delay-15s">For those who believe in leaving a mark</h1>
@@ -810,6 +810,7 @@
 	      infinite: true,
         dots: false,
         nav: true,
+        margin: 30,
         responsiveClass:true,
         responsive:{
           0:{
@@ -896,6 +897,12 @@
   <!-- back-to-top -->
   <script src="./js/back-to-top-master/assets/js/main.js"></script>
   <script src="./js/back-to-top-master/assets/js/util.js"></script>
+
+  <script>
+    document.querySelector('.icon-expand').onclick = function() {
+      document.querySelector('.navbar-toggler').removeClass('.collapsed');
+    }
+  </script>
 
   <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/script.js"></script>
 </body>
