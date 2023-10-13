@@ -224,6 +224,55 @@ header.nav-fixed {
 .gg-sun::after {
     transform: rotate(45deg)
 }
+/* dark light  */
+/* Light theme */
+#myBody {
+    background-color: white;
+}
+#switchButton {
+    background-color: white;
+    border: 1px solid black;
+}
+#switchButton .gg-sun {
+    display: none;
+}
+#switchButton .gg-moon {
+    display: block;
+}
+
+/* Dark Theme*/
+.dark#myBody  {
+    background-color: #151421;
+    color: white;
+}
+.dark #switchButton {
+    background-color: #151421;
+    border: 1px solid white;
+}
+.dark #switchButton .gg-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .gg-moon {
+    display: none;
+}
+.dark .banner-slider,.dark header.nav-fixed, .dark .nav-fixed .navbar .navbar-brand, .dark .about-content .about-left a,
+.dark .word, .dark .word-content .word-right .word-item h3 a,
+.dark .gallery, .dark .testimonials, .dark .blog-card .card-body .hello, .dark .card-icon ul a,
+.dark .service-item a.btn-service, .dark .progress-info .progress-title, .dark .about6, .dark .about6-text h5 a,
+.dark .item-content a h6 {
+    background-color: #151421;
+    color: white;
+    opacity: 1;
+}
+.dark .feature-item, .dark .feature-info a.title-feature, .dark .word-content .word-right .word-item {
+    background-color: black;
+    color: white;
+}
+.dark .shape {
+    fill: #151421;
+}
 .control {
     margin-right: 15px;
 }
@@ -289,6 +338,7 @@ a.dropdown-item {
     padding-bottom: 100px;
     overflow: hidden;
     z-index: 1;
+    background-color: black;
 }
 .banner-slider .owl-carousel .slide1 {
     background-image: url(../img/b1.jpg);
@@ -1016,6 +1066,9 @@ a.dropdown-item {
     color: #213364;
     font-weight: 600;
     transition: all 0.5s;
+}
+.card-icon a img {
+    border-radius: 50%;
 }
 .card-icon ul a:hover {
     color: green;
