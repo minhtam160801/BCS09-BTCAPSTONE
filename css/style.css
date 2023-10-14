@@ -643,6 +643,11 @@ a.dropdown-item {
     font-weight: 500;
     border-radius: 8px;
 }
+.btn-banner .btn-style:hover {
+    color: white;
+    background-color: #00732c;
+    border-color: #00732c;
+}
 @media screen and (max-width: 375px) {
     .btn-style {
         font-size: 16px;
