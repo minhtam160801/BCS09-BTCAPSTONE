@@ -373,108 +373,35 @@ header.nav-fixed {
 .mode-container i.gg-sun {
     display: none;
 }
-.gg-moon,
-.gg-moon::after {
-    display: block;
-    box-sizing: border-box;
-    border-radius: 50%
-}
-.gg-moon {
-    overflow: hidden;
-    position: relative;
-    transform: rotate(-135deg) scale(var(--ggs,1));
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-bottom-color: transparent;
-    color: #eee;
-}
-.gg-moon::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 18px;
-    border: 2px solid transparent;
-    box-shadow: 0 0 0 2px;
-    top: 8px;
-    left: 2px
-}
-.gg-sun {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 24px;
-    height: 24px;
-    background:
-      linear-gradient(to bottom,
-          currentColor 4px,transparent 0)
-          no-repeat 5px -6px/2px 6px,
-      linear-gradient(to bottom,
-          currentColor 4px,transparent 0)
-          no-repeat 5px 14px/2px 6px,
-      linear-gradient(to bottom,
-          currentColor 4px,transparent 0)
-          no-repeat -8px 5px/6px 2px,
-      linear-gradient(to bottom,
-          currentColor 4px,transparent 0)
-          no-repeat 14px 5px/6px 2px;
-    border-radius: 100px;
-    box-shadow: inset 0 0 0 2px;
-    border: 6px solid transparent;
-    color: #eee;
-}
-.gg-sun::after,
-.gg-sun::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    border-right: 4px solid;
-    border-left: 4px solid;
-    left: -6px;
-    top: 5px
-}
-.gg-sun::before {
-    transform: rotate(-45deg)
-}
-.gg-sun::after {
-    transform: rotate(45deg)
-}
+
 /* dark light  */
 /* Light theme */
 #myBody {
     background-color: white;
 }
-#switchButton {
-    background-color: white;
-    border: 1px solid black;
-}
 #switchButton .gg-sun {
     display: none;
+    color: white;
 }
 #switchButton .gg-moon {
     display: block;
+    color: white;
 }
-
+header.nav-fixed #switchButton .gg-moon {
+    color: black;
+}
 /* Dark Theme*/
 .dark#myBody  {
     background-color: #151421;
     color: white;
 }
-.dark #switchButton {
-    background-color: #151421;
-    border: 1px solid white;
-}
 .dark #switchButton .gg-sun {
     display: block;
     color: white;
 }
-
 .dark #switchButton .gg-moon {
     display: none;
+    color: white;
 }
 .dark .banner-slider,.dark header.nav-fixed, .dark .nav-fixed .navbar .navbar-brand, .dark .about-content .about-left a,
 .dark .word, .dark .word-content .word-right .word-item h3 a,
@@ -1490,7 +1417,7 @@ form.subscribe {
 footer a {
     margin-right: 15px;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     background: none;
     border-radius: 50%;
