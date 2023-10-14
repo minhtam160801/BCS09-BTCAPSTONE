@@ -91,16 +91,17 @@
               <a class="nav-link" href="#">CONTACT</a>
             </li>
           </ul>
-          <div class="header-search">
-            <div class="control">
-              <div class="btn-material">
-                <i class="fa fa-search icon-material-search"></i>
-              </div>
+          <div class="header-search HeaderSearch">
+            <div class="control mr-3">
+            <div class="btn-material">
+              <i class="fa fa-search icon-material-search"></i>
             </div>
-            <!-- <i class="icon-close fa fa-close material-icons"></i> -->
-            <!-- <form action="#" method="GET" class="search-input">
-              <input type="text" class="input-search" placeholder="Start Typing">
-            </form> -->
+            </div>
+            <!-- full screen form controls -->
+            <i class="icon-close fa fa-close material-icons"></i>
+            <form action="https://wp.w3layouts.com/corpvision/" method="GET" class="search-input">
+            <input class="input-search" name="s" placeholder="Start Typing" type="text" fdprocessedid="6lny8o">
+            </form>
           </div>
           <div class="mobile-position text-center DarkandLight">
             <button class="mode-container btn" id="switchButton" title="Click to switch theme">
@@ -655,12 +656,12 @@
             rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
           </p>
         </div>
-        <form action="" class="subscribe mt-5" method="post">
+        <form action="./about.html" class="subscribe mt-5" method="get">
           <div class="icon-input">
             <span class="fa fa-paper-plane"></span>
           </div>
           <input type="email" name="email" placeholder="Your Email Address" required>
-          <button class="btn btn-primary">Subscribe</button>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
         </form>
       </div>
     </div>
@@ -897,13 +898,39 @@
   <!-- back-to-top -->
   <script src="./js/back-to-top-master/assets/js/main.js"></script>
   <script src="./js/back-to-top-master/assets/js/util.js"></script>
-
+  <!-- search  -->
   <script>
-    document.querySelector('.icon-expand').onclick = function() {
-      document.querySelector('.navbar-toggler').removeClass('.collapsed');
-    }
+    $('.control').click(function () {
+      $('body').addClass('search-active');
+      $('.input-search').focus();
+    });
+  
+    $('.icon-close').click(function () {
+      $('body').removeClass('search-active');
+    });
   </script>
-
+  <script>
+    $('.icon-expand').click(function () {
+      $('button').removeClass('collapsed');
+      $("div").addClass("show");
+    });
+    $('.icon-close').click(function () {
+      $('button').addClass('collapsed');
+      $("div").removeClass("show");
+    });
+  </script>
+  <script>
+    $(document).on("ready", function () {
+      if ($(window).width() < 992) {
+        $("div").removeClass("navbar-collapse");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() < 992) {
+          $("div").removeClass("navbar-collapse");
+        }
+      });
+    });
+  </script>
   <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/script.js"></script>
 </body>
 
